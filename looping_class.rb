@@ -1,7 +1,7 @@
 #Looping - Iterate over the range of number, text, array elements and so on.
 
 #Print Hello World 10 times
-=begin
+
 #Without Loop
 puts "Hello World"
 puts "Hello World"
@@ -58,7 +58,6 @@ for i in city_array
     puts "You are not welcome to this City: #{i}"
   end
 end
-=end
 
 #While loop - while loop executes unite the condition is true
 
@@ -68,4 +67,29 @@ number = 0
 while x >= number
   puts "Number is: #{x}"
   x = x - 1 # or write like x -= 1
+end
+
+#until loop - Opposite of while loop
+x = 0
+max_number = 10
+
+until x >= max_number
+  puts "Number is #{x}"
+  x += 1
+
+#Iteration
+#times - Only can be used in integers
+10.times {
+  puts "Hello Ruby"
+}
+
+#each loop - Used primarily in array and hashes
+counties_array = ["polk", "fairfax", "orange", "dustin"]
+
+#for country in counties_array
+#  puts "country: #{country}"
+#end
+
+counties_array.each do |county|
+  puts "country: #{county}"
 end
