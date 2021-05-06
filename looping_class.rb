@@ -93,3 +93,4 @@ counties_array = ["polk", "fairfax", "orange", "dustin"]
 counties_array.each do |county|
   puts "country: #{county}"
 end
+  end
