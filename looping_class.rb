@@ -32,10 +32,40 @@ for i in 1..10
     puts "Value of i is: #{i}"
   end
 end
-=end
-#for loop - to find even number from 1..10
+
+#for loop - to find even/odd number from 1..10
 for i in 1..10
   if i % 2 == 0
     puts "#{i} is an even number"
+  else
+    puts"#{i} is an odd number"
   end
+end
+
+#for loop to iterate over an array.
+# Array - list of collection of string, integer and so on.
+
+city_array = ["New York", "Ohio", "Washington DC", "Chicago", "Los Angeles"]
+
+for i in city_array
+  puts  "City: #{i}"
+end
+puts "........................."
+for i in city_array
+  if (i == "Chicago")
+    puts "Welcome to My City: #{i}"
+    else
+    puts "You are not welcome to this City: #{i}"
+  end
+end
+=end
+
+#While loop - while loop executes unite the condition is true
+
+x = 10
+number = 0
+
+while x >= number
+  puts "Number is: #{x}"
+  x = x - 1 # or write like x -= 1
 end
